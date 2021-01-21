@@ -298,10 +298,10 @@ def main():
                 if is_no(yn) or is_yes(yn) or yn=="0": break
                 print('Wrong Input, Input again')
         
-        if yn == "0" or is_no(yn): break
-        elif is_yes(yn): 
-            random_number = str(get_not_duplicated_three_digit_number())
-            print("Random Number is : ", random_number)
+            if yn == "0" or is_no(yn): break
+            elif is_yes(yn): 
+                random_number = str(get_not_duplicated_three_digit_number())
+                print("Random Number is : ", random_number)
 
     # ==================================
     print("Thank you for using this program")
