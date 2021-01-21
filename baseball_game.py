@@ -281,6 +281,7 @@ def main():
     print("Random Number is : ", random_number)
     # ===Modify codes below=============
     # 위의 코드를 포함하여 자유로운 수정이 가능함
+
      while True:
         user_input = input("Input guess number: ")
         if user_input == "0": break
