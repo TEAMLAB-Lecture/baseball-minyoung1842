@@ -286,12 +286,12 @@ def main():
         if user_input == "0": break
             
         if  is_validated_number(user_input) == False:
-            print("Wrong Input")
+            print("Wrong Input, Input again")
             continue
             
         strikes, balls = get_strikes_or_ball(user_input, random_number)
         print(f'Strikes : {strikes} , Balls : {ball}')
-        
+
         if strikes == 3:
             while True:
                 yn = input('You win, one more(Y/N) ?')
