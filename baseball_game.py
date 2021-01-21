@@ -290,7 +290,7 @@ def main():
             continue
             
         strikes, balls = get_strikes_or_ball(user_input, random_number)
-        print(f'Strikes : {strikes} , Balls : {ball}')
+        print(f'Strikes : {strikes} , Balls : {balls}')
 
         if strikes == 3:
             while True:
