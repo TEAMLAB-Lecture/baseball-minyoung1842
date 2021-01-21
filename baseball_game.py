@@ -281,15 +281,16 @@ def main():
     print("Random Number is : ", random_number)
     # ===Modify codes below=============
     # 위의 코드를 포함하여 자유로운 수정이 가능함
-    while True:
-        input_num = input("Input three digit number: ")
-        if input_num == "0": break
+     while True:
+        user_input = input("Input guess number: ")
+        if user_input == "0": break
             
-        if  is_validated_number(input_num) == False:
+        if  is_validated_number(user_input) == False:
             print("Wrong Input")
             continue
             
-        strikes, balls = get_strikes_or_ball(input_num, random_number)
+        strikes, balls = get_strikes_or_ball(user_input, random_number)
+        print(f'Strikes : {strikes} , Balls : {ball}')
         
         if strikes == 3:
             while True:
